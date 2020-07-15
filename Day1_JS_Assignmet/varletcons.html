@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>DAY - 3 Assignment question 2:</h3>
+    <p>2. write the diffrence between var, let and cosnt  with code example ?</p>
+            
+                <h4>var</h4>
+            <p>    
+                var declarations are globally scoped or function/locally scoped.var is function scoped when it is declared within a function. This means that it is available and can be accessed only within that function.
+                var variables can be re-declared and updated
+This means that we can do this within the same scope and won't get an error.</p>
+                <pre>
+                    example:
+                    var greeter = "hey hi";
+                    var greeter = "say Hello instead";
+                </pre>
+            <h4>Let</h4>
+            <p>let is now preferred for variable declaration. It's  comes as an improvement to var declarations. It also solves Some problem with var. 
+                Let is block a chunk of code bounded by {}. A block lives in curly braces. Anything within curly braces is a block.
+                So a variable declared in a block with let  is only available for use within that block. let can be updated but not re-declared.
+            </p>
+            <pre>
+                EXAMPLE:
+                {
+                    let greeting = "say Hi";
+                }
+            </pre>
+            <h4>const</h4>
+            <p>Variables declared with the const maintain constant values. const declarations share some similarities with let declarations.const declarations are block scoped
+                Like let declarations, const declarations can only be accessed within the block they were declared.const declarations are block scoped
+                Like let declarations, const declarations can only be accessed within the block they were declared.
+                const cannot be updated or re-declared.
+                This means that the value of a variable declared with const remains the same within its scope. It cannot be updated or re-declared. 
+                Even if we try to re- declaration then error will be shown</p>
+                <pre>
+                    EXAMPLE:
+                    const greeting = "say Hi";
+                    greeting = "say Hello instead"; // error: Assignment to constant variable.
+                </pre>
+<script>
+        // variable example
+         var greeter = "hey hi";
+         var greeter = "say Hello instead";
+
+        //let example
+        {
+            let greeting = "say Hi";
+        }
+        //cosnt example
+        const greeting = "say Hi";
+         greeting = "say Hello instead";// error: Assignment to constant variable.
+</script>
+</body>
+</html>

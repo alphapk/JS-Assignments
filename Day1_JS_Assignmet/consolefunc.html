@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 1</title>
+</head>
+<body>
+    <h3>Various method of Console function</h3>
+
+    <p id = "warning">1) warn() function is used to print warning messages to the console output with warning symbol </p>
+    <p id ="info">2) info() function displayed Informational messages. The info() function will provide information symbol to the console output.</p>
+    <p id = "error">3) error(): We can print the error messages to the console with the error()function. An error symbol will be displayed in the outputs and the output text color will be red to express this is an error.</p>
+    <p id="log">4) log(): The most popular function of the console object is log() function which will simply print given data, text or object into the console output.</p>
+    <p id ="trace">5) trace: While running JavaScript code on the browser DOM there will be some stack about running JavaScript code. We can print this stack to the console output with the trace() function for the currently executed code.</p>
+    <p id="table">6) table() function is used to display given data or object in a table formatted way. The object or data will be generally in JSON format.    </p>
+    <p>7) group(): We can use groups in order to print messages in hierarchical manner. Groups can group() and end with groupEnd() functions. Groups can be nested as inner group list a regular group.</p>
+    
+    <script>
+        // console.warn example
+        console.warn(document.getElementById("warning"));
+        // consle.info exapmle
+        console.info(document.getElementById("info"))
+        // console.error example
+        console.error(document.getElementById("error"))
+        // console.log example
+        console.log("Hi this is simple message");
+
+        // console.trace example
+        
+            function bar() {
+                console.trace();
+            }
+            bar();
+        
+        // console.table example
+        
+            var category = [
+            { type: 'shoes', name: 'puma', size: 6},
+            { type:'pumps', name:'steve maiden', size:3},
+            { type:'sandals' , name:'Motcha', size:5},
+            ];
+
+            console.table(category);
+
+        // console.group example
+           console.group('1st group');
+
+            console.log('First message');
+
+            console.group('A group inside the 1st group');
+
+            console.log('A message inside the group inside the 1st group');
+            
+            console.log('Another message inside the group inside the 1st group');
+
+            console.groupEnd();
+
+            console.log('2nd message'); 
+
+            console.groupEnd();
+
+    </script>
+</body>
+</html>
