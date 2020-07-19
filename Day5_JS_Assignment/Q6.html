@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 6</title>
+</head>
+
+<body>
+    <h2>Assignment 6 - DAY 4</h2>
+    <script>
+        let num = 0;
+        let n = 0;
+        while (n < 100) {
+            n = window.prompt("Enter the number", 100);
+            num = n;
+
+            // Using if condition
+            // if (n == null) {
+            //     n = 100;
+            //     console.log("Vistor clicked cancel");
+            // }
+            // else if (n > 99) {
+            //     console.log(`Visitor input is ${num}`);
+            // }
+
+
+            // Using ternary operator
+            (n == null) ? (n = 100, console.log("Vistor clicked cancel")) : (n > 99) ? console.log(`Visitor input is ${num}`) : false;
+        }
+    </script>
+</body>
+
+</html>

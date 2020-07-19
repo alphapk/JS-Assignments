@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5</title>
+</head>
+
+<body>
+    <h2>Assignment 5 - DAY 4</h2>
+    <script>
+        let sales = window.prompt("Enter the sales value");
+        let res;
+        let temp;
+        if (sales == null) {
+            console.log("Cancelled");
+        }
+        else if (sales < 0) {
+            console.log("sales cannot be Negative");
+        }
+        else if (sales <= 5000) {
+            temp = (sales * 0.02);
+            res = temp.toFixed(2);
+            console.log(`Commision :${res}`);
+        }
+        else if (sales <= 10000) {
+            temp = (((sales - 5000) * 0.05) + 100);
+            res = temp.toFixed(2);
+            console.log(`Comission: ${res}`);
+        }
+        else if (sales <= 20000) {
+            temp = (((sales - 10000) * 0.07) + 350);
+            res = temp.toFixed(2);
+            console.log(`Comission: ${res}`);
+        }
+        else {
+            temp = (((sales - 20000) * 0.1) + 1050);
+            res = temp.toFixed(2);
+            console.log(`Comission: ${res}`);
+        }
+    </script>
+</body>
+
+</html>
