@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<title>ToDo List App</title>
+	</head>
+	<body>
+		<div class="jumbotron text-center">
+			<h2>ToDo List</h2>
+		</div>
+		<div class="contianer">
+			<div class="row">
+				<div class="col-lg-4 col-lg-offset-4">
+					<div class="input-group">
+						<input type="text" class="form-control" id="addTxt" />
+						<span class="input-group-btn">
+							<button class="btn btn-success" type="button" id="save" onclick="addElement()">Save</button>
+						</span>
+					</div>
+				</div>
+			</div>
+			<div>
+				<hr>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 col-lg-offset-4">
+					<div class="list-group-item">
+						<ul class="list-group">
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<script src="index.js"></script>
+
+	</body>
+</html>
